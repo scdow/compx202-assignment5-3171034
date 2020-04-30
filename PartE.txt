@@ -1,0 +1,14 @@
+1. What is Fragment?
+Fragment is a part of the user interface, it can include views, viewgroups, widgets, buttons, etc.
+It likes a modular UI component, and can be used in one or several FragmentAcivity.
+It has own lifecycle and receives which related to the activity state which declared it.
+
+2. When two XML layout files have almost identical code and expected to change something they both have, use Fragments and do the following things:
+(1) Defined a Fragment’s layout in a xml file, eg: res/layout/fragment_logos.xml
+(2) Put the Fragment into activity layout files through:
+    a. declaring the fragment_logos with <fragment> tag;
+    b. or add the fragment_logos into an existing ViewgGoup in activity.
+(3) Now the UI collection in fragment_logos can be displayed in both the portrait layout and land layout files.
+(4) If the logo attributes are expected to change, developer can just modify the fragment_logos.xml file,
+    then the logo in two layout activity files will be change together.
+
